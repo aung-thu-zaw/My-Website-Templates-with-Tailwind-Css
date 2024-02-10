@@ -4,6 +4,8 @@ import InputLabel from "@/components/Form/InputLabel.vue";
 import InputError from "@/components/Form/InputError.vue";
 import InputField from "@/components/Form/InputField.vue";
 import Checkbox from "@/components/Form/Checkbox.vue";
+
+useHead({ title: "Sign In" });
 </script>
 
 <template>

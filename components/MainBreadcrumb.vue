@@ -1,15 +1,5 @@
 <script setup lang="ts">
 defineProps({
-  to: {
-    type: String,
-    required: true,
-  },
-
-  targetIdentifier: {
-    type: [Object],
-    required: false,
-  },
-
   label: {
     type: String,
     required: true,

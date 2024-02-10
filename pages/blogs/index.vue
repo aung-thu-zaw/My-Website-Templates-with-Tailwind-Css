@@ -6,6 +6,8 @@ import BlogSortBy from "~/components/BlogSortBy.vue";
 import BlogCard from "~/components/BlogCard.vue";
 import BlogCategoryCard from "~/components/BlogCategoryCard.vue";
 import BlogTagCard from "~/components/BlogTagCard.vue";
+
+useHead({ title: "Blogs" });
 </script>
 
 <template>

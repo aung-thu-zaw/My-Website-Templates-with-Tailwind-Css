@@ -3,6 +3,8 @@ import FormButton from "@/components/Form/FormButton.vue";
 import InputLabel from "@/components/Form/InputLabel.vue";
 import InputError from "@/components/Form/InputError.vue";
 import InputField from "@/components/Form/InputField.vue";
+
+useHead({ title: "Sign Up" });
 </script>
 
 <template>
