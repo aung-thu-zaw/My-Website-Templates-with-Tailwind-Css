@@ -7,12 +7,18 @@ import Checkbox from "@/components/Form/Checkbox.vue";
 </script>
 
 <template>
-  <div class="flex items-center justify-center py-10">
+  <div
+    class="flex items-center justify-center py-10"
+    data-aos="fade-in"
+    data-aos-duration="1000"
+  >
     <div
       class="w-full max-w-lg p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8"
     >
       <form @submit.prevent="" class="w-full space-y-5">
-        <h1 class="text-center text-2xl text-slate-800 font-bold mb-6">Welcome Back</h1>
+        <h1 class="text-center text-2xl text-slate-800 font-bold mb-6">
+          Welcome Back
+        </h1>
 
         <!-- Email Input -->
         <div>

@@ -9,7 +9,7 @@ import BlogTagCard from "~/components/BlogTagCard.vue";
 </script>
 
 <template>
-  <section>
+  <section data-aos="fade-in" data-aos-duration="600">
     <div class="container mx-auto py-10">
       <div
         class="flex flex-col items-start md:flex-row md:items-center md:justify-between mb-4 md:mb-8 border-b pb-5"

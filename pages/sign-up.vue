@@ -6,7 +6,7 @@ import InputField from "@/components/Form/InputField.vue";
 </script>
 
 <template>
-  <div class="flex items-center justify-center py-10">
+  <div class="flex items-center justify-center py-10" data-aos="fade-in" data-aos-duration="1000">
     <div
       class="w-full max-w-lg p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8"
     >
