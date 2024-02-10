@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 // Your Code
 </script>
 
@@ -15,12 +15,14 @@
           </a>
           <p class="text-xs font-semibold text-slate-600">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-            reiciendis, ex doloremque consectetur accusamus, suscipit quidem eum,
-            voluptatibus vel iste culpa enim praesentium nisi repudiandae porro omnis
-            atque tempora magni?
+            reiciendis, ex doloremque consectetur accusamus, suscipit quidem
+            eum, voluptatibus vel iste culpa enim praesentium nisi repudiandae
+            porro omnis atque tempora magni?
           </p>
         </div>
-        <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 w-full ml-20">
+        <div
+          class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 w-full ml-20"
+        >
           <div>
             <h2 class="mb-6 text-sm font-bold text-slate-900 uppercase">
               Resources Link
@@ -30,18 +32,26 @@
                 <a href="https://flowbite.com/" class="hover:underline">Home</a>
               </li>
               <li class="mb-4">
-                <a href="https://flowbite.com/" class="hover:underline">About</a>
+                <a href="https://flowbite.com/" class="hover:underline"
+                  >About</a
+                >
               </li>
               <li>
-                <a href="https://flowbite.com/" class="hover:underline">Contact Us</a>
+                <a href="https://flowbite.com/" class="hover:underline"
+                  >Contact Us</a
+                >
               </li>
             </ul>
           </div>
           <div>
-            <h2 class="mb-6 text-sm font-bold text-slate-900 uppercase">Follow us</h2>
+            <h2 class="mb-6 text-sm font-bold text-slate-900 uppercase">
+              Follow us
+            </h2>
             <ul class="text-slate-600 font-semibold text-sm">
               <li class="mb-4">
-                <a href="https://github.com/themesberg/flowbite" class="hover:underline"
+                <a
+                  href="https://github.com/themesberg/flowbite"
+                  class="hover:underline"
                   >Facebook</a
                 >
               </li>
@@ -56,12 +66,16 @@
                 >
               </li>
               <li>
-                <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Reddit</a>
+                <a href="https://discord.gg/4eeurUVvTy" class="hover:underline"
+                  >Reddit</a
+                >
               </li>
             </ul>
           </div>
           <div>
-            <h2 class="mb-6 text-sm font-bold text-slate-900 uppercase">Legal</h2>
+            <h2 class="mb-6 text-sm font-bold text-slate-900 uppercase">
+              Legal
+            </h2>
             <ul class="text-slate-600 font-semibold text-sm">
               <li class="mb-4">
                 <a href="#" class="hover:underline">Privacy Policy</a>
@@ -76,7 +90,8 @@
       <hr class="my-6 border-slate-200 sm:mx-auto lg:my-8" />
       <div class="sm:flex sm:items-center sm:justify-between">
         <span class="text-sm text-slate-500 sm:text-center"
-          >© 2023 <a href="https://flowbite.com/" class="hover:underline">CMS™</a>. All
+          >© 2023
+          <a href="https://flowbite.com/" class="hover:underline">CMS™</a>. All
           Rights Reserved.
         </span>
         <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">

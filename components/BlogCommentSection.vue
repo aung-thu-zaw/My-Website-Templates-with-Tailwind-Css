@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import BlogCommentForm from "@/components/BlogCommentForm.vue";
 </script>
 
@@ -6,7 +6,9 @@ import BlogCommentForm from "@/components/BlogCommentForm.vue";
   <section>
     <div class="border border-gray-300 bg-white rounded-sm shadow">
       <div class="border-b p-5">
-        <p class="text-md font-semibold text-slate-700 mb-5">Total Comments (10)</p>
+        <p class="text-md font-semibold text-slate-700 mb-5">
+          Total Comments (10)
+        </p>
 
         <div class="py-5">
           <p class="text-center font-bold text-slate-700 text-md">

@@ -4,7 +4,7 @@ import Footer from "@/components/Footer.vue";
 </script>
 
 <template>
-  <div class="bg-[#fff] min-h-screen">
+  <div class="bg-[#fff] min-h-screen font-roboto">
     <Navbar />
 
     <main>

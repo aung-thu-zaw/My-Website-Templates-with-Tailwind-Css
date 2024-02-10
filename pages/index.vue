@@ -6,7 +6,7 @@ import LatestBlogSection from "@/components/LatestBlogSection.vue";
 <template>
   <div>
     <HeaderIntro />
-
+    
     <LatestBlogSection />
   </div>
 </template>

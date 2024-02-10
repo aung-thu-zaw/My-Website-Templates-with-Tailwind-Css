@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import TextAreaField from "@/components/Form/TextAreaField.vue";
 import InputError from "@/components/Form/InputError.vue";
 import FormButton from "@/components/Form/FormButton.vue";
@@ -8,7 +8,11 @@ import FormButton from "@/components/Form/FormButton.vue";
   <div class="p-5">
     <form @submit.prevent="">
       <div class="mb-3">
-        <TextAreaField name="comment-blog" placeholder="Enter comment" required />
+        <TextAreaField
+          name="comment-blog"
+          placeholder="Enter comment"
+          required
+        />
 
         <!-- <InputError :message="" /> -->
       </div>

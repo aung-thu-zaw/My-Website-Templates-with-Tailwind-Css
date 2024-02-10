@@ -10,7 +10,10 @@ const router = useRouter();
       class="max-w-[85rem] w-full mx-auto px-4 flex flex-wrap basis-full items-center justify-between"
       aria-label="Global"
     >
-      <NuxtLink to="/" class="sm:order-1 flex-none text-xl font-bold text-slate-700">
+      <NuxtLink
+        to="/"
+        class="sm:order-1 flex-none text-xl font-bold text-slate-700"
+      >
         CMS Blog System
       </NuxtLink>
       <div class="sm:order-3 flex items-center gap-x-2">
@@ -79,9 +82,10 @@ const router = useRouter();
           <NuxtLink
             to="/"
             :class="{
-              'text-red-500 hover:text-red-600': router.currentRoute.value.path === '/',
-              'text-slate-600 hover:text-slate-800': router.currentRoute.value.path !== '/',
-
+              'text-red-500 hover:text-red-600':
+                router.currentRoute.value.path === '/',
+              'text-slate-600 hover:text-slate-800':
+                router.currentRoute.value.path !== '/',
             }"
           >
             Home
@@ -94,14 +98,13 @@ const router = useRouter();
                 router.currentRoute.value.path === '/blogs' ||
                 router.currentRoute.value.path.startsWith('/blogs'),
 
-                'text-slate-600 hover:text-slate-800':
+              'text-slate-600 hover:text-slate-800':
                 router.currentRoute.value.path !== '/blogs' ||
                 !router.currentRoute.value.path.startsWith('/blogs'),
             }"
           >
             Blogs
           </NuxtLink>
-
         </div>
       </div>
     </nav>

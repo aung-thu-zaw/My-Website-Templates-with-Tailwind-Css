@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import Breadcrumb from "~/components/MainBreadcrumb.vue";
 import BreadcrumbItem from "~/components/BreadcrumbItem.vue";
 import RelatedBlogCard from "~/components/RelatedBlogCard.vue";

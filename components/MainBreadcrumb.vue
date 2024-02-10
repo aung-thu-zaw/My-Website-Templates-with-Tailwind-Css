@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 defineProps({
   to: {
     type: String,
@@ -20,7 +20,9 @@ defineProps({
 <template>
   <nav class="flex mb-5 md:mb-0 overflow-x-auto w-full md:max-w-[1000px] px-0">
     <ol class="inline-flex items-center">
-      <li class="inline-flex items-center text-slate-700 hover:text-red-600 duration-150">
+      <li
+        class="inline-flex items-center text-slate-700 hover:text-red-600 duration-150"
+      >
         <NuxtLink to="/" class="inline-flex items-center text-sm font-bold">
           <svg
             class="flex-shrink-0 me-3 h-4 w-4"

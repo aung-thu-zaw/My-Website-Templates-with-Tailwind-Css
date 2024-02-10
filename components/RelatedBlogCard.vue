@@ -1,10 +1,14 @@
-<script setup></script>
+<script setup lang="ts">
+// Your Code
+</script>
 
 <template>
   <div
     class="p-5 border border-gray-300 rounded-md bg-white flex flex-col w-full items-center space-y-5"
   >
-    <h1 class="font-bold text-red-600 text-lg pb-3 border-b-2 border-b-red-500 w-full">
+    <h1
+      class="font-bold text-red-600 text-lg pb-3 border-b-2 border-b-red-500 w-full"
+    >
       - Related Blogs
     </h1>
 
@@ -19,10 +23,10 @@
         />
         <div class="space-y-1.5">
           <h3 class="font-bold text-md line-clamp-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptatibus
-            provident delectus praesentium enim quo recusandae sapiente consectetur
-            deleniti, laudantium autem architecto error et quibusdam neque labore beatae
-            nulla ratione?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+            voluptatibus provident delectus praesentium enim quo recusandae
+            sapiente consectetur deleniti, laudantium autem architecto error et
+            quibusdam neque labore beatae nulla ratione?
           </h3>
 
           <div class="text-xs font-medium space-x-1.5">
@@ -43,10 +47,10 @@
         />
         <div class="space-y-1.5">
           <h3 class="font-bold text-md line-clamp-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptatibus
-            provident delectus praesentium enim quo recusandae sapiente consectetur
-            deleniti, laudantium autem architecto error et quibusdam neque labore beatae
-            nulla ratione?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+            voluptatibus provident delectus praesentium enim quo recusandae
+            sapiente consectetur deleniti, laudantium autem architecto error et
+            quibusdam neque labore beatae nulla ratione?
           </h3>
 
           <div class="text-xs font-medium space-x-1.5">
@@ -67,10 +71,10 @@
         />
         <div class="space-y-1.5">
           <h3 class="font-bold text-md line-clamp-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptatibus
-            provident delectus praesentium enim quo recusandae sapiente consectetur
-            deleniti, laudantium autem architecto error et quibusdam neque labore beatae
-            nulla ratione?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+            voluptatibus provident delectus praesentium enim quo recusandae
+            sapiente consectetur deleniti, laudantium autem architecto error et
+            quibusdam neque labore beatae nulla ratione?
           </h3>
 
           <div class="text-xs font-medium space-x-1.5">
@@ -91,10 +95,10 @@
         />
         <div class="space-y-1.5">
           <h3 class="font-bold text-md line-clamp-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptatibus
-            provident delectus praesentium enim quo recusandae sapiente consectetur
-            deleniti, laudantium autem architecto error et quibusdam neque labore beatae
-            nulla ratione?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+            voluptatibus provident delectus praesentium enim quo recusandae
+            sapiente consectetur deleniti, laudantium autem architecto error et
+            quibusdam neque labore beatae nulla ratione?
           </h3>
 
           <div class="text-xs font-medium space-x-1.5">
@@ -115,10 +119,10 @@
         />
         <div class="space-y-1.5">
           <h3 class="font-bold text-md line-clamp-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptatibus
-            provident delectus praesentium enim quo recusandae sapiente consectetur
-            deleniti, laudantium autem architecto error et quibusdam neque labore beatae
-            nulla ratione?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+            voluptatibus provident delectus praesentium enim quo recusandae
+            sapiente consectetur deleniti, laudantium autem architecto error et
+            quibusdam neque labore beatae nulla ratione?
           </h3>
 
           <div class="text-xs font-medium space-x-1.5">
@@ -139,10 +143,10 @@
         />
         <div class="space-y-1.5">
           <h3 class="font-bold text-md line-clamp-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptatibus
-            provident delectus praesentium enim quo recusandae sapiente consectetur
-            deleniti, laudantium autem architecto error et quibusdam neque labore beatae
-            nulla ratione?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+            voluptatibus provident delectus praesentium enim quo recusandae
+            sapiente consectetur deleniti, laudantium autem architecto error et
+            quibusdam neque labore beatae nulla ratione?
           </h3>
 
           <div class="text-xs font-medium space-x-1.5">

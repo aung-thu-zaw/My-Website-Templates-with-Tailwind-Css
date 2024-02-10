@@ -1,13 +1,19 @@
-<script setup></script>
+<script setup lang="ts">
+// Your Code
+</script>
 
 <template>
   <div class="w-full">
     <form>
-      <label for="default-search" class="mb-2 text-sm font-medium text-slate-900 sr-only"
+      <label
+        for="default-search"
+        class="mb-2 text-sm font-medium text-slate-900 sr-only"
         >Search</label
       >
       <div class="relative">
-        <div class="absolute inset-y-0 left-0 flex items-center pl-5 pointer-events-none">
+        <div
+          class="absolute inset-y-0 left-0 flex items-center pl-5 pointer-events-none"
+        >
           <svg
             class="w-4 h-4 text-slate-500"
             aria-hidden="true"

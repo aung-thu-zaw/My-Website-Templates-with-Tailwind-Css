@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 // Your Code
 </script>
 
@@ -6,7 +6,7 @@
   <div>
     <select
       id="menu-sortby"
-      class="py-5 font-bold text-sm text-slate-700 rounded-full  outline-none border-none"
+      class="py-5 font-bold text-sm text-slate-700 rounded-full outline-none border-none"
     >
       <option selected disabled>Sort By</option>
       <option value="latest">Latest</option>
