@@ -23,6 +23,7 @@ export const useBlogStore = defineStore("blogs", {
     blogs: (state) => state.data,
     blog: (state) => state.currentBlog?.content,
     relatedBlogs: (state) => state.currentBlog?.relatedContents,
+    comments: (state) => state.currentBlog?.comments,
     categories: (state) => state.resources?.categories || [],
     tags: (state) => state.resources?.tags || [],
     errors: (state) => state.responseErrors,

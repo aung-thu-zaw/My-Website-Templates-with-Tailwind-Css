@@ -13,7 +13,7 @@ const title = ref<string>("");
 useHead({ title });
 
 const store = useBlogStore();
-const { blog, relatedBlogs, categories, tags } = storeToRefs(store);
+const { blog, relatedBlogs, categories, tags, comments } = storeToRefs(store);
 
 onMounted(async () => {
   await store.getBlog(useRoute()?.params?.slug);
@@ -122,7 +122,7 @@ onMounted(async () => {
           <!-- Blog Tags End -->
 
           <!-- Blog Comments Section -->
-          <BlogCommentSection />
+          <BlogCommentSection :comments="comments" :blogs="blog" />
         </div>
       </div>
     </div>
