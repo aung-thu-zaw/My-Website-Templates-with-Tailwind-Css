@@ -1,5 +1,46 @@
 <script setup lang="ts">
 import BlogCard from "@/components/BlogCard.vue";
+import { ref, onMounted } from "vue";
+import { useHomeStore } from "~/stores/home";
+
+const landmark = ref<HTMLElement | null>(null);
+const items = ref<any[]>([]);
+const store = useHomeStore();
+const { blogs } = storeToRefs(store);
+
+onMounted(async () => {
+  await store.getLatestBlogs();
+  if (typeof IntersectionObserver !== "undefined" && IntersectionObserver) {
+    observer?.observe(landmark.value!);
+  }
+  if (blogs.value) items.value = blogs.value.data;
+});
+
+const loadMoreItem = async () => {
+  if (!blogs.value?.links?.next) return;
+
+  const data = await $fetch(blogs.value.links.next);
+
+  if (data) items.value = [...items.value, ...data.data];
+
+  store.$patch({ data: data });
+};
+
+let observer: IntersectionObserver | null = null;
+if (typeof IntersectionObserver !== "undefined" && IntersectionObserver) {
+  observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          loadMoreItem();
+        }
+      });
+    },
+    {
+      rootMargin: "0px 0px 150px 0px",
+    }
+  );
+}
 </script>
 
 <template>
@@ -23,18 +64,15 @@ import BlogCard from "@/components/BlogCard.vue";
 
       <!-- Grid -->
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
+        <BlogCard v-for="blog in items" :key="blog.id" :blog="blog" />
+      </div>
+      <div v-if="!blogs.links?.next" class="mt-14">
+        <p class="text-slate-700 text-sm font-semibold text-center">
+          You have reached the end of the page.
+        </p>
       </div>
     </div>
+
+    <div ref="landmark"></div>
   </section>
 </template>
