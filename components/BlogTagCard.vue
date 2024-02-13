@@ -1,5 +1,5 @@
 <script setup lang="ts">
-// Your Code
+defineProps<{ tags: { id: number; name: string }[] }>();
 </script>
 
 <template>
@@ -16,64 +16,12 @@
 
     <div class="flex items-center flex-wrap w-full">
       <button
+        v-for="tag in tags"
+        :key="tag?.id"
         type="button"
         class="bg-gray-50 px-3.5 py-2 mx-1.5 rounded-full border border-red-500 hover:text-white hover:bg-red-600 mb-3 font-bold text-xs text-red-600 flex items-center justify-between hover:scale-105 duration-150"
       >
-        Tag One
-      </button>
-      <button
-        type="button"
-        class="bg-gray-50 px-3.5 py-2 mx-1.5 rounded-full border border-red-500 hover:text-white hover:bg-red-600 mb-3 font-bold text-xs text-red-600 flex items-center justify-between hover:scale-105 duration-150"
-      >
-        Tag Two
-      </button>
-      <button
-        type="button"
-        class="bg-gray-50 px-3.5 py-2 mx-1.5 rounded-full border border-red-500 hover:text-white hover:bg-red-600 mb-3 font-bold text-xs text-red-600 flex items-center justify-between hover:scale-105 duration-150"
-      >
-        Tag Three
-      </button>
-      <button
-        type="button"
-        class="bg-gray-50 px-3.5 py-2 mx-1.5 rounded-full border border-red-500 hover:text-white hover:bg-red-600 mb-3 font-bold text-xs text-red-600 flex items-center justify-between hover:scale-105 duration-150"
-      >
-        Tag Four
-      </button>
-      <button
-        type="button"
-        class="bg-gray-50 px-3.5 py-2 mx-1.5 rounded-full border border-red-500 hover:text-white hover:bg-red-600 mb-3 font-bold text-xs text-red-600 flex items-center justify-between hover:scale-105 duration-150"
-      >
-        Tag Five
-      </button>
-      <button
-        type="button"
-        class="bg-gray-50 px-3.5 py-2 mx-1.5 rounded-full border border-red-500 hover:text-white hover:bg-red-600 mb-3 font-bold text-xs text-red-600 flex items-center justify-between hover:scale-105 duration-150"
-      >
-        Tag Six
-      </button>
-      <button
-        type="button"
-        class="bg-gray-50 px-3.5 py-2 mx-1.5 rounded-full border border-red-500 hover:text-white hover:bg-red-600 mb-3 font-bold text-xs text-red-600 flex items-center justify-between hover:scale-105 duration-150"
-      >
-        Tag Seven
-      </button>
-      <button
-        type="button"
-        class="bg-gray-50 px-3.5 py-2 mx-1.5 rounded-full border border-red-500 hover:text-white hover:bg-red-600 mb-3 font-bold text-xs text-red-600 flex items-center justify-between hover:scale-105 duration-150"
-      >
-        Tag Eight
-      </button>
-      <button
-        type="button"
-        class="bg-gray-50 px-3.5 py-2 mx-1.5 rounded-full border border-red-500 hover:text-white hover:bg-red-600 mb-3 font-bold text-xs text-red-600 flex items-center justify-between hover:scale-105 duration-150"
-      >
-        Tag Nine
-      </button>
-      <button
-        type="button"
-        class="bg-gray-50 px-3.5 py-2 mx-1.5 rounded-full border border-red-500 hover:text-white hover:bg-red-600 mb-3 font-bold text-xs text-red-600 flex items-center justify-between hover:scale-105 duration-150"
-      >
-        Tag Ten
+        {{ tag?.name }}
       </button>
     </div>
   </div>

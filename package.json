@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@pinia/nuxt": "^0.5.1",
+    "axios": "^1.6.7",
     "nuxt": "^3.10.1",
     "pinia": "^2.1.7",
     "preline": "^2.0.3",
@@ -18,7 +19,6 @@
     "vue-router": "^4.2.5"
   },
   "devDependencies": {
-    "@nuxtjs/tailwindcss": "^6.11.3",
-    "nuxt-aos": "^1.2.2"
+    "@nuxtjs/tailwindcss": "^6.11.3"
   }
 }

@@ -27,6 +27,12 @@ useHead({
       href: "https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap",
     },
   ],
+  script: [
+    {
+      src: "https://kit.fontawesome.com/18c274e5f3.js",
+      crossorigin: "anonymous",
+    },
+  ],
 });
 </script>
 

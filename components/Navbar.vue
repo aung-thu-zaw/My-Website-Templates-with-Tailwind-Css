@@ -1,5 +1,8 @@
 <script setup lang="ts">
 const router = useRouter();
+
+const goToBlogs = () =>
+  router.push({ path: "/blogs", query: { page: 1, sort: "latest" } });
 </script>
 
 <template>
@@ -91,8 +94,8 @@ const router = useRouter();
             Home
           </NuxtLink>
 
-          <NuxtLink
-            to="/blogs"
+          <button
+            @click="goToBlogs"
             :class="{
               'text-red-500 hover:text-red-600':
                 router.currentRoute.value.path === '/blogs' ||
@@ -104,7 +107,7 @@ const router = useRouter();
             }"
           >
             Blogs
-          </NuxtLink>
+          </button>
         </div>
       </div>
     </nav>

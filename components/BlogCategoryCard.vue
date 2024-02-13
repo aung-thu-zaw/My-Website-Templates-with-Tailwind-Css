@@ -1,5 +1,12 @@
 <script setup lang="ts">
-// Your Code
+defineProps<{
+  categories: {
+    id: number;
+    name: string;
+    slug: string;
+    contents_count: number;
+  }[];
+}>();
 </script>
 
 <template>
@@ -16,39 +23,17 @@
 
     <div class="space-y-3 w-full">
       <button
+        v-for="category in categories"
+        :key="category?.id"
         type="button"
         class="bg-gray-50 px-5 py-3.5 round-md border border-gray-200 w-full font-semibold text-sm text-slate-700 rounded-md flex items-center justify-between hover:scale-105 duration-150"
       >
-        <span href="#">Category One </span>
-        <span class="text-red-600"> |&nbsp;&nbsp; 3</span>
-      </button>
-      <button
-        type="button"
-        class="bg-gray-50 px-5 py-3.5 round-md border border-gray-200 w-full font-semibold text-sm text-slate-700 rounded-md flex items-center justify-between hover:scale-105 duration-150"
-      >
-        <span href="#">Category Two </span>
-        <span class="text-red-600"> |&nbsp;&nbsp; 3</span>
-      </button>
-      <button
-        type="button"
-        class="bg-gray-50 px-5 py-3.5 round-md border border-gray-200 w-full font-semibold text-sm text-slate-700 rounded-md flex items-center justify-between hover:scale-105 duration-150"
-      >
-        <span href="#">Category Three </span>
-        <span class="text-red-600"> |&nbsp;&nbsp; 3</span>
-      </button>
-      <button
-        type="button"
-        class="bg-gray-50 px-5 py-3.5 round-md border border-gray-200 w-full font-semibold text-sm text-slate-700 rounded-md flex items-center justify-between hover:scale-105 duration-150"
-      >
-        <span href="#">Category Four </span>
-        <span class="text-red-600"> |&nbsp;&nbsp; 3</span>
-      </button>
-      <button
-        type="button"
-        class="bg-gray-50 px-5 py-3.5 round-md border border-gray-200 w-full font-semibold text-sm text-slate-700 rounded-md flex items-center justify-between hover:scale-105 duration-150"
-      >
-        <span href="#">Category Five </span>
-        <span class="text-red-600"> |&nbsp;&nbsp; 3</span>
+        <span class="line-clamp-1 text-left w-[180px]">
+          {{ category?.name }}
+        </span>
+        <span class="text-red-600">
+          |&nbsp;&nbsp; {{ category?.contents_count }}</span
+        >
       </button>
     </div>
   </div>
